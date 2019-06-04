@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.lambo.toolwindow.SqlGeneratorToolWindow">
+  <grid id="27dc6" binding="sqlGenContext" layout-manager="GridLayoutManager" row-count="2" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="776" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="e49bb">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="8" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e9890" class="com.intellij.ui.components.JBList" binding="sqlList">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <toolbar id="b7aaa">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <floatable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1b2d4" class="javax.swing.JButton" binding="buttonRun">
+            <constraints/>
+            <properties>
+              <text value="生成"/>
+            </properties>
+          </component>
+          <component id="ee48" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="c7ba7" class="javax.swing.JButton" binding="fileChooseButton">
+            <constraints/>
+            <properties>
+              <text value="选择xml文件"/>
+            </properties>
+          </component>
+          <component id="76b91" class="javax.swing.JButton" binding="resetButton">
+            <constraints/>
+            <properties>
+              <text value="清空"/>
+            </properties>
+          </component>
+          <component id="e0979" class="javax.swing.JLabel" binding="fileName">
+            <constraints/>
+            <properties>
+              <preferredSize width="100" height="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="717a8" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="985f3" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="选择要生成的表"/>
+            </properties>
+          </component>
+          <component id="8ecf1" class="com.intellij.openapi.ui.ComboBox" binding="tableComboBox">
+            <constraints/>
+            <properties>
+              <doubleBuffered value="false"/>
+              <editable value="false"/>
+              <maximumRowCount value="100"/>
+              <maximumSize width="200" height="32767"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+    </children>
+  </grid>
+</form>
